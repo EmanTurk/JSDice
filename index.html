@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans&family=Pixelify+Sans&family=Roboto:wght@500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./style_dice.css" />
+    <link rel="stylesheet" href="./second_stylesheet.css" />
+  </head>
+  <body>
+    <!-- <embed src="./assets/1-01. Today's Story.mp3" loop="true" autostart="true" width="2" height="0"> -->
+
+    <div class="modal-content" id="modal-content">
+      <div class="gif-contanier">
+        <h1 class="welcome">  
+          <span class="text-wrapper">
+          <span class="letters">Wanna Play A Fun Game?</span>
+        </span></h1>
+
+        <img id="gif" src="./assets/decadot.gif" height="40%" width="40%" />
+      </div>
+
+      <ul id="Instruction">
+        <h2 id="heading-inst">Instruction:</h2>
+
+        <li>
+          In your turn - roll the dice (at least once) and accumulate the result
+          in "current"
+        </li>
+        <li>
+          You can roll again or click "Hold" to save the points from "Current"
+          and end the turn.
+        </li>
+        <li>
+          Notel If you get 6-6 - you will lose all points from "current" and the
+          turn will go to your opponent. If you managed to reach exactly the
+          target score - you win! If you passed it - you loose
+        </li>
+      </ul>
+      <div class="start-btn">
+        <input id="btn1" type="number" min="80" max="100" id="target-score" />
+
+        <button onclick="closeWindow()" id="start1game">Start Game</button>
+      </div>
+    </div>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop autoplay>
+      <source src="./assets/1-01. Today's Story.mp3" type="audio/mp3" />
+    </audio>
+    <img
+      id="muteButton"
+      src="./assets/unmute icon.png"
+      onclick="toggleMute()"
+      style="position: fixed; right: 10px; top: 10px; cursor: pointer" />
+    <!-- Background Music -->
+
+    <main>
+      <!-- Player 01 -->
+      <section class="player player01 player--active">
+        <h2 class="name" id="name_1">Player 1</h2>
+        <p class="score" id="score_0">100</p>
+        <div class="current">
+          <p class="current_label">Current</p>
+          <p class="current_score" id="current_0">0</p>
+        </div>
+      </section>
+      <!-- Player 01 -->
+
+      <!-- Player 02 -->
+      <section class="player player02 player--active">
+        <h2 class="name" id="name_2">Player 2</h2>
+        <p class="score" id="score_1">100</p>
+        <div class="current">
+          <p class="current_label">Current</p>
+          <p class="current_score" id="current_1">0</p>
+        </div>
+      </section>
+      <!-- Player 02 -->
+
+      <!-- Images, Buttons for the start of the Game -->
+      <img src="./assets/dice-1.png" alt="Playing dice" class="dice" />
+      <img src="./assets/dice-2.png" alt="Playing dice" class="dice1" />
+      <button class="btn btn--new">
+        <img src="./assets/newg1.gif" alt="gif Image" class="start-gif" /> New
+        game
+      </button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">⏸️ Hold</button>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="eventsDice.js"></script>
+    <script src="./mainecents.js"></script>
+  </body>
+</html>

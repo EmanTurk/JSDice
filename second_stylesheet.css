@@ -1,0 +1,178 @@
+/* In this Style Sheet I used it to style the players */
+* {
+  font-family: "Pixelify Sans", cursive;
+}
+.player01 {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  font-size: 40px;
+}
+
+.player02 {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  font-size: 40px;
+}
+
+/* Elements for each player */
+
+.name {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #9f2eae;
+  margin-bottom: auto;
+}
+
+/* Players column design */
+.player--active {
+  background-color: rgba(149, 209, 255, 0.759);
+}
+/* .player01 {
+  background-color: rgba(255, 183, 232, 0.411);
+} */
+
+/* .player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+.player--active .current {
+  opacity: 1;
+} */
+
+/* .player02 {
+  background-color: rgba(149, 209, 255, 0.759);
+} */
+
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+.player--active .current {
+  opacity: 1;
+}
+/* Players column design */
+
+.current {
+  background-color: #981cab86;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current_label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.current-score {
+  font-size: 10rem;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2d2525;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: white;
+  background-color: rgba(246, 164, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn--new {
+  top: 4rem;
+}
+
+.start-gif {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  margin-left: -30px;
+}
+.btn--roll {
+  top: 39.3rem;
+  margin-top: 20%;
+}
+.dice-icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.btn--hold {
+  top: 46.1rem;
+  margin-top: 20%;
+}
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.btn:focus {
+  outline: none;
+}
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.dice1 {
+  position: absolute;
+  left: 50%;
+  margin-top: 20%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.player--winner {
+  background-color: #23c275;
+}
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
